@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const MemberScore = ({ list }) => {
   const getScore = () => {
-    console.log("caculate functionss.....");
+    console.log("연산이 오지는 마법..");
     return list.reduce((value, user) => {
       return (user.houseScore / user.score) * 100;
     });
@@ -18,7 +18,7 @@ const MemberScore = ({ list }) => {
 
 const MemoizingMemberScore = ({ list }) => {
   const getScore = useMemo(() => {
-    console.log("<,.,.,.caculate functionss.....");
+    console.log("useMemo가 살아남는 방법");
     return list.reduce((value, user) => {
       return (user.houseScore / user.score) * 100;
     });
