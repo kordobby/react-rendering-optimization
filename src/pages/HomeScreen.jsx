@@ -40,7 +40,6 @@ const HomeScreen = () => {
       >
         STEP FIVE
       </Button>
-      <Button>STEP ONE</Button>
     </PageLayout>
   );
 };

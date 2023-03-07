@@ -4,7 +4,7 @@ import { colors } from "../../../shared/colors";
 import flex from "../../../utils/utilFlex";
 import { useRenderCount } from "../../../hooks/useRenderCount";
 const Button = ({ onClick, children, buttonType }) => {
-  useRenderCount(children);
+  // useRenderCount(children);
 
   return (
     <ButtonWrapper onClick={onClick} buttonType={buttonType}>
@@ -18,6 +18,7 @@ export default React.memo(Button);
 const ButtonWrapper = styled.div`
   padding: 10px 10px;
   border-radius: 4px;
+  margin-bottom: 20px;
   ${flex({})}
   font-size: 14px;
   &:hover {
