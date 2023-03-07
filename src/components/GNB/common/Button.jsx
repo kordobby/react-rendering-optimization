@@ -1,8 +1,11 @@
+import React from "react";
 import styled, { css } from "styled-components";
 import { colors } from "../../../shared/colors";
 import flex from "../../../utils/utilFlex";
-
+import { useRenderCount } from "../../../hooks/useRenderCount";
 const Button = ({ onClick, children, buttonType }) => {
+  useRenderCount(children);
+
   return (
     <ButtonWrapper onClick={onClick} buttonType={buttonType}>
       <span>{children}</span>
@@ -10,7 +13,7 @@ const Button = ({ onClick, children, buttonType }) => {
   );
 };
 
-export default Button;
+export default React.memo(Button);
 
 const ButtonWrapper = styled.div`
   padding: 10px 10px;

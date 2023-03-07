@@ -19,4 +19,8 @@ export const pageData = {
     title: "리액트 메모랑 친해져볼ㄲㅏ교?",
     subtitle: "니가뭔데",
   },
+  stepFive: {
+    title: "useCallback 이랑 친해지기",
+    subtitle: "는 힘들어요",
+  },
 };
