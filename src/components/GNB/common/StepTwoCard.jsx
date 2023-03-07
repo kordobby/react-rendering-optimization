@@ -6,7 +6,6 @@ import { useRenderCount } from "../../../hooks/useRenderCount";
 
 const StepTwoCard = ({ data }) => {
   useRenderCount("좋은 예시 아이템 카드");
-  console.log(data);
   const getMembers = (member) => {
     if (member === "해리포터") {
       return {

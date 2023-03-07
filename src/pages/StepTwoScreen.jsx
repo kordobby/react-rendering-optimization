@@ -89,9 +89,9 @@ const CounterText = styled.span`
 `;
 
 const ListWrapper = styled.div`
-  padding-top: 30px;
+  /* padding-top: 30px; */
   ${flex({
-    gap: "10px",
+    gap: "30px",
     justify: "flex-start",
   })}/* flex-direction: column; */
 `;
