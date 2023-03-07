@@ -11,4 +11,8 @@ export const pageData = {
     title: "객체 타입의 state 변경하지 않기",
     subtitle: "새로운 객체를 생성해서 props로 전달하면 문제가 발생합니다.",
   },
+  stepThree: {
+    title: "키값이 렌더링에 미치는 영향",
+    subtitle: "느닷없이 바뀌는 키값이 렌더링을 야기하고 있다면...",
+  },
 };

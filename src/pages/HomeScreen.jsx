@@ -19,7 +19,13 @@ const HomeScreen = () => {
       >
         STEP TWO
       </Button>
-      <Button>STEP ONE</Button>
+      <Button
+        onClick={() => {
+          navigate("/stepthree");
+        }}
+      >
+        STEP THREE
+      </Button>
       <Button>STEP ONE</Button>
       <Button>STEP ONE</Button>
       <Button>STEP ONE</Button>
