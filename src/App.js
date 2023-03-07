@@ -1,11 +1,11 @@
 import { useRenderCount } from "./hooks/useRenderCount";
-import StepOneScreen from "./pages/StepOneScreen";
+import Router from "./shared/Router";
 import Layout from "./components/GNB/Layout";
 function App() {
   useRenderCount("render Home");
   return (
     <Layout>
-      <StepOneScreen />
+      <Router />
     </Layout>
   );
 }
