@@ -31,8 +31,20 @@ const StepFourScreen = () => {
   const [list, setList] = useState(stepFourData);
   const [input, setInput] = useState("");
 
+  const addCardHandler = () => {
+    setList((prev) => [
+      ...prev,
+      {
+        name: "지니 위즐리",
+        house: "그리핀도르",
+        score: "99999",
+        houseScore: "100000",
+      },
+    ]);
+  };
   return (
     <PageLayout page="stepFour">
+      <Button onClick={addCardHandler}>useMemo를 움직이는 방법</Button>
       <Input placeholder="렌더링이 오지는 마법" onChange={setInput} />
       <MemberScore list={list} />
       <MemoizingMemberScore list={list} />
