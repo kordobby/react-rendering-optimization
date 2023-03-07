@@ -15,4 +15,8 @@ export const pageData = {
     title: "키값이 렌더링에 미치는 영향",
     subtitle: "느닷없이 바뀌는 키값이 렌더링을 야기하고 있다면...",
   },
+  stepFour: {
+    title: "리액트 메모랑 친해져볼ㄲㅏ교?",
+    subtitle: "니가뭔데",
+  },
 };
