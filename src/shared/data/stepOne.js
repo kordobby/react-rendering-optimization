@@ -15,4 +15,12 @@ export const stepOneData = [
     name: "루나 러브굿",
     house: "래번클로",
   },
+  {
+    name: "론 위즐리",
+    house: "그리핀도르",
+  },
+  {
+    name: "초 챙",
+    house: "래번클로",
+  },
 ];
