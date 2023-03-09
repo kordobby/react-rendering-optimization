@@ -30,7 +30,7 @@ const MemoizingMemberScore = ({ list }) => {
 const StepFourScreen = () => {
   const [list, setList] = useState(stepFourData);
   const [input, setInput] = useState("");
-
+  const [open, setOpen] = useState(false);
   const addCardHandler = () => {
     setList((prev) => [
       ...prev,
@@ -42,16 +42,41 @@ const StepFourScreen = () => {
       },
     ]);
   };
+
+  const Lists = useMemo(() => {
+    return (
+      <>
+        {list.map((value, index) => {
+          return <ItemCard key={index} data={value} />;
+        })}
+      </>
+    );
+  }, [list]);
+
   return (
-    <PageLayout page="stepFour">
-      <Button onClick={addCardHandler}>useMemo를 움직이는 방법</Button>
+    <>
+      {/* <PageLayout page="stepFour">
+      <Button
+        onClick={() => {
+          setOpen(!open);
+        }}
+      >
+        useMemo를 움직이는 방법
+      </Button>
       <Input placeholder="렌더링이 오지는 마법" onChange={setInput} />
       <MemberScore list={list} />
-      <MemoizingMemberScore list={list} />
-      {list.map((value, index) => {
-        return <ItemCard key={index} data={value} />;
-      })}
-    </PageLayout>
+      <MemoizingMemberScore list={list} /> */}
+      <div>
+        <Input placeholder="렌더링이 오지는 마법" onChange={setInput} />
+
+        {/* {!open &&
+          list.map((value, index) => {
+            return <ItemCard key={index} data={value} />;
+          })} */}
+        {Lists}
+      </div>
+      {/* </PageLayout> */}
+    </>
   );
 };
 

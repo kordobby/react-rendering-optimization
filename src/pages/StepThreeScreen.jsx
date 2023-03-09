@@ -48,7 +48,7 @@ const StepThreeScreen = () => {
   return (
     <PageLayout page={`stepThree`}>
       <ListWrapper>
-        <IndexKeyList />
+        {/* <IndexKeyList /> */}
         <UniqueKeyList />
       </ListWrapper>
     </PageLayout>

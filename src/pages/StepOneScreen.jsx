@@ -11,6 +11,7 @@ const FlatList = ({ listProps }) => {
   const [list, setList] = useState(stepOneData);
 
   const addListHandler = () => {
+    console.log("리스트 버튼 클릭");
     setList((prev) => [
       ...prev,
       {
@@ -49,6 +50,7 @@ const StepOneScreen = () => {
   const [list, setList] = useState(stepOneData);
 
   const addListHandler = () => {
+    console.log("페이지에 있는 버튼 클릭");
     setList((prev) => [
       ...prev,
       {

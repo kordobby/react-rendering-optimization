@@ -4,7 +4,7 @@ import { colors } from "../../../shared/colors";
 import flex from "../../../utils/utilFlex";
 import { useRenderCount } from "../../../hooks/useRenderCount";
 const Button = ({ onClick, children, buttonType }) => {
-  useRenderCount(children);
+  // useRenderCount(children);
 
   return (
     <ButtonWrapper onClick={onClick} buttonType={buttonType}>

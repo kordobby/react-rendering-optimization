@@ -11,45 +11,33 @@ const BadMemberList = () => {
   const [counter, setCounter] = useState(0);
 
   const getMembers = (member) => {
-    const source = new Map(
-      [
-        [
-          "해리포터",
-          {
-            name: "해리포터",
-            house: "그리핀도르",
-          },
-        ],
-      ],
-      [
-        [
-          "드레이코 말포이",
-          {
-            name: "드레이코 말포이",
-            house: "슬리데린",
-          },
-        ],
-      ],
-      [
-        [
-          "세드릭 디고리",
-          {
-            name: "세드릭 디고리",
-            house: "후플푸프",
-          },
-        ],
-      ],
-      [
-        [
-          "루나 러브굿",
-          {
-            name: "루나 러브굿",
-            house: "래번클로",
-          },
-        ],
-      ]
-    );
-    return source.get(member);
+    switch (member) {
+      case "해리포터":
+        return {
+          name: "해리포터",
+          house: "그리핀도르",
+        };
+      case "드레이코 말포이":
+        return {
+          name: "드레이코 말포이",
+          house: "슬리데린",
+        };
+      case "세드릭 디고리":
+        return {
+          name: "세드릭 디고리",
+          house: "후플푸프",
+        };
+      case "루나 러브굿":
+        return {
+          name: "루나 러브굿",
+          house: "래번클로",
+        };
+      default:
+        return {
+          name: "루나 러브굿",
+          house: "래번클로",
+        };
+    }
   };
 
   const addCounter = () => {
@@ -92,7 +80,7 @@ const StepTwoScreen = () => {
   return (
     <PageLayout page="stepTwo">
       <ListWrapper>
-        <BadMemberList />
+        {/* <BadMemberList /> */}
         <GoodMemberList />
       </ListWrapper>
     </PageLayout>

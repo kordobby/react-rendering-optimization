@@ -5,7 +5,7 @@ import { colors } from "../../../shared/colors";
 import { useRenderCount } from "../../../hooks/useRenderCount";
 
 const ItemCard = ({ data }) => {
-  // useRenderCount("아이템 카드");
+  useRenderCount("아이템 카드");
 
   return (
     <ItemCardWrapper house={data?.house}>
