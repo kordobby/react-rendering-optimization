@@ -24,7 +24,7 @@ const MemoizingMemberScore = ({ list }) => {
     });
   }, [list]);
 
-  return <MemoAverageWrapper score={getScore}>{getScore}</MemoAverageWrapper>;
+  return <MemoAverageWrapper>{getScore}</MemoAverageWrapper>;
 };
 
 const StepFourScreen = () => {
