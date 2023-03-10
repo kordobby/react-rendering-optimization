@@ -1,9 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import StepOneScreen from "../pages/StepOneScreen";
-import StepTwoScreen from "../pages/StepTwoScreen";
-import StepThreeScreen from "../pages/StepThreeScreen";
-import StepFourScreen from "../pages/StepFourScreen";
-import StepFiveScreen from "../pages/ScreenFiveScreen";
 import HomeScreen from "../pages/HomeScreen";
 
 import FirstBadCaseScreen from "../pages/FirstBadCaseScreen";
