@@ -2,29 +2,30 @@ import React, { useState, useCallback } from "react";
 import styled from "styled-components";
 import PageLayout from "../components/GNB/common/PageLayout";
 import Button from "../components/GNB/common/Button";
+import CallbackButton from "../components/GNB/common/CallBackButton";
 import { stepOneData } from "../shared/data/stepOne";
-import LogMemoButton from "../components/GNB/common/LogMemoButton";
-import { Blank } from "./FifthBadCaseScreen";
 
-const FifthGoodCaseScreen = () => {
-  const [input, setInput] = useState("");
-
+const CommonFunctionScreen = () => {
   const [members, setMembers] = useState(stepOneData);
 
-  const deleteMemberCallback = useCallback(() => {
-    setMembers();
-  }, []);
+  const deleteMember = (member) => {
+    console.log(member);
+    setMembers((value) => value.filter((el) => el.name !== member));
+  };
 
   return (
     <>
       <PageLayout page={"stepFive"}>
-        <input type="text" onChange={(e) => setInput(e.target.value)}></input>
-        <Blank />
         {members.map((value, index) => {
           return (
-            <LogMemoButton onClick={deleteMemberCallback} key={`${value.name}`}>
+            <Button
+              onClick={() => {
+                deleteMember(value.name);
+              }}
+              key={`${value.name}`}
+            >
               {value.name}
-            </LogMemoButton>
+            </Button>
           );
         })}
       </PageLayout>
@@ -32,4 +33,4 @@ const FifthGoodCaseScreen = () => {
   );
 };
 
-export default FifthGoodCaseScreen;
+export default CommonFunctionScreen;

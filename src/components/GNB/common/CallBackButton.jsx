@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { colors } from "../../../shared/colors";
 import flex from "../../../utils/utilFlex";
 import { useRenderCount } from "../../../hooks/useRenderCount";
-const Button = ({ onClick, children, buttonType }) => {
+const CallBackButton = ({ onClick, children, buttonType }) => {
   // useRenderCount(children);
 
   return (
@@ -13,7 +13,7 @@ const Button = ({ onClick, children, buttonType }) => {
   );
 };
 
-export default React.memo(Button);
+export default React.memo(CallBackButton);
 
 const ButtonWrapper = styled.div`
   padding: 10px 10px;

@@ -38,6 +38,14 @@ const HomeScreen = () => {
       span: "STEP FOUR GOOD CASE",
     },
     {
+      route: "/5/common",
+      span: "STEP FIVE COMMON FUNCTION",
+    },
+    {
+      route: "/5/callback",
+      span: "STEP FIVE USECALLBACK",
+    },
+    {
       route: "/5/bad",
       span: "STEP FIVE BAD CASE",
     },

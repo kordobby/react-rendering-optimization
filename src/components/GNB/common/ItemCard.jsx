@@ -8,7 +8,7 @@ const ItemCard = ({ data }) => {
   return (
     <ItemCardWrapper house={data?.house}>
       <span>{data?.name}</span>
-      <span>{data?.house}</span>
+      {/* <span>{data?.house}</span> */}
     </ItemCardWrapper>
   );
 };

@@ -16,6 +16,8 @@ import FourthBadCaseScreen from "../pages/FourthBadCaseScreen";
 import FourthGoodCaseScreen from "../pages/FourthGoodCaseScreen";
 import FifthBadCaseScreen from "../pages/FifthBadCaseScreen";
 import FifthGoodCaseScreen from "../pages/FifthGoodCaseScreen";
+import CommonCallbackScreen from "../pages/CommonCallbackScreen";
+import CommonFunctionScreen from "../pages/CommonFunctionScreen";
 
 const Router = () => {
   return (
@@ -32,10 +34,8 @@ const Router = () => {
         <Route path="/4/good" element={<FourthGoodCaseScreen />} />
         <Route path="/5/bad" element={<FifthBadCaseScreen />} />
         <Route path="/5/good" element={<FifthGoodCaseScreen />} />
-        <Route path="/steptwo" element={<StepTwoScreen />} />
-        <Route path="/stepthree" element={<StepThreeScreen />} />
-        <Route path="/stepfour" element={<StepFourScreen />} />
-        <Route path="/stepfive" element={<StepFiveScreen />} />
+        <Route path="/5/callback" element={<CommonCallbackScreen />} />
+        <Route path="/5/common" element={<CommonFunctionScreen />} />
       </Routes>
     </BrowserRouter>
   );
