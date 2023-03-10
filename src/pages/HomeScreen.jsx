@@ -7,10 +7,17 @@ const HomeScreen = () => {
     <PageLayout page={`home`}>
       <Button
         onClick={() => {
-          navigate("/stepone");
+          navigate("/step/one/bad");
         }}
       >
-        STEP ONE
+        STEP ONE BAD CASE
+      </Button>
+      <Button
+        onClick={() => {
+          navigate("/step/one/good");
+        }}
+      >
+        STEP ONE GOOD CASE
       </Button>
       <Button
         onClick={() => {
