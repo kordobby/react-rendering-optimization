@@ -4,7 +4,9 @@ import flex from "../../../utils/utilFlex";
 import { colors } from "../../../shared/colors";
 import { useRenderCount } from "../../../hooks/useRenderCount";
 
-const ItemCard = ({ data }) => {
+const LogMemoCard = ({ data }) => {
+  useRenderCount("아이템 카드");
+
   return (
     <ItemCardWrapper house={data?.house}>
       <span>{data?.name}</span>
@@ -13,7 +15,7 @@ const ItemCard = ({ data }) => {
   );
 };
 
-export default React.memo(ItemCard);
+export default React.memo(LogMemoCard);
 
 const ItemCardWrapper = styled.div`
   width: 300px;

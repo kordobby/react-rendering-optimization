@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 import { colors } from "../../../shared/colors";
 import flex from "../../../utils/utilFlex";
 import { useRenderCount } from "../../../hooks/useRenderCount";
-const Button = ({ onClick, children, buttonType }) => {
-  // useRenderCount(children);
+const LogMemoButton = ({ onClick, children, buttonType }) => {
+  useRenderCount(children);
 
   return (
     <ButtonWrapper onClick={onClick} buttonType={buttonType}>
@@ -13,7 +13,7 @@ const Button = ({ onClick, children, buttonType }) => {
   );
 };
 
-export default React.memo(Button);
+export default React.memo(LogMemoButton);
 
 const ButtonWrapper = styled.div`
   padding: 10px 10px;
