@@ -8,6 +8,7 @@ import styled from "styled-components";
 import flex from "../utils/utilFlex";
 
 const FlatList = ({ listProps }) => {
+  useRenderCount("flat list");
   return (
     <>
       <CardsWrapper>
